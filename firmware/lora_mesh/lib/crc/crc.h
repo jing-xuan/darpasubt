@@ -1,5 +1,8 @@
+#ifndef crc_h
+#define crc_h
+
 #include <Arduino.h>
-#include <util/crc16.h>
+#include <FastCRC.h>
 
 namespace CRC
 {
@@ -11,3 +14,5 @@ namespace CRC
             static bool check_crc16(uint8_t* data, uint16_t len, uint16_t index);
     };
 }
+
+#endif
